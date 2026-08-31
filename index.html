@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+        
+        h1, h2, h3 {
+            color: #1a202c;
+        }
+
+        /* Navigation */
+        header {
+            background: #1a202c;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #63b3ed;
+        }
+
+        /* Section Layout */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #2b6cb0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .btn:hover {
+            background: #2c5282;
+        }
+
+        /* Tech Stack */
+        .tech-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        
+        .tech-item {
+            background: #edf2f7;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            color: #2d3748;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Projects */
+        .project-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-links {
+            margin-top: 15px;
+        }
+        
+        .project-links a {
+            color: #2b6cb0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact & Socials */
+        .contact-container {
+            text-align: center;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .social-links a:hover {
+            color: #2b6cb0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a202c;
+            color: #cbd5e0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#tech-stack">Tech Stack</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! My name is Narayani Deshpande and I am a student at MIT-WPU , currently pursuing Computer Science and Engineering  with a growing interest in Artificial Intelligence, Machine Learning, Software Development and Coding. 
+            I enjoy learning by building projects and exploring how technology can solve real-world problems. I like working on hands-on projects that help me apply what I learn and improve my problem-solving skills. I actively exploring AI-ML through online courses , Technical competition etc.  </p>
+        <p>Beyond my technical skills, I have a keen interest in Space-Tech and Astronomy.
+             I work as a Volunteer at Jyotirvidya Parisanstha, assisting in exhibitions and sky-grazing programs.
+            I have also worked with STeRG , a student-led Space-Tech Club at MIT-WPU, Designing and operation Real-time Telemetry Dashboards (GUI) for Monitoring Data,Plotting Real-Time graphs for CanSat/Rocketry Mission </p>
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <section id="tech-stack">
+        <h2 class="section-title">My Tech Stack</h2>
+        <div class="tech-container">
+            <span class="tech-item">HTML5</span>
+            <span class="tech-item">CSS3</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">Python</span>
+            <span class="tech-item">C </span>
+             <span class="tech-item">Pandas</span>
+              <span class="tech-item">Numpy</span>
+               <span class="tech-item">Matplotlib</span>
+                <span class="tech-item">Scikit-learn</span>
+                 <span class="tech-item">ML</span>
+            <span class="tech-item">3D Model Web Integration (GLB)</span>
+            <span class="tech-item">Git & GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-card">
+            <h3>Cansat/Rocketry Mission Control Dashboard</h3>
+            <p>An interactive, responsive ground control station website for STeRG, A student-led Space-Tech Club at MIT-WPU.
+                 Features include live tracking maps, a 3D orientation panel using GLB models, battery telemetry, and real-time sensor data visualization.</p>
+            <div class="project-links">
+                <a href="https://github.com/codernarayanidesh2907/GUI-STeRG--Narayani-Deshpande-.git" target="_blank">View on GitHub &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Teen Mental Health Awareness Platform</h3>
+            <p>This project uses Machine Learning to analyze factors associated with teen mental health and identify patterns that may indicate potential mental health risks.
+                The project also includes an interactive GUI that allows users to enter relevant information and view the model's prediction.</p>
+            <div class="project-links">
+                <a href="https://github.com/codernarayanidesh2907/Teen_Mental_Health.git" target="_blank">View on GitHub &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Prediction of M5 Solar Flares</h3>
+            <p>A Capstone Project given by IIT Guwahati, An ML-based solar flare prediction system that analyses solar active region parameters to predict whether a solar flare may occur within the next 24 hours </p>
+            <div class="project-links">
+                <a href="https://github.com/codernarayanidesh2907/Prediction-of-M5-Solar-Flare-.git" target="_blank">View on GitHub &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        <p>Email Me: narayanideshpande9@gmail.com</p>
+        
+        
+        <div class="social-links">
+            <a href="https://linkedin.com/in/narayani-deshpande-a0070b37a" target="_blank">LinkedIn</a>
+            <a href="https://github.com/codernarayanidesh2907" target="_blank">GitHub</a>
+            <a href="https://www.kaggle.com/narayanideshpande" target="_blank">Kaggle</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Narayani's Portfolio. Built with Love.</p>
+    </footer>
+
+</body>
+</html>
